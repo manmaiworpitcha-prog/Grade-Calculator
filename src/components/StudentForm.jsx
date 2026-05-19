@@ -37,22 +37,22 @@ export default function StudentForm({ onAddStudent }) {
 
   return (
     <div className="card form-container">
-      <h2>Add New Student</h2>
+      <h2>เพิ่มข้อมูลนักศึกษา</h2>
       <form onSubmit={handleSubmit}>
         <div className="form-group">
-          <label>Student Name / ID</label>
+          <label>ชื่อ / รหัสนักศึกษา</label>
           <input 
             type="text" 
             name="name" 
             value={formData.name} 
             onChange={handleChange} 
-            placeholder="e.g. John Doe (12345)" 
+            placeholder="เช่น สมชาย (12345)" 
             required 
           />
         </div>
         <div className="form-row">
           <div className="form-group">
-            <label>Attendance (0-20)</label>
+            <label>การเข้าเรียน (0-20)</label>
             <input 
               type="number" 
               name="attendance" 
@@ -64,7 +64,7 @@ export default function StudentForm({ onAddStudent }) {
             />
           </div>
           <div className="form-group">
-            <label>Midterm (0-40)</label>
+            <label>สอบกลางภาค (0-40)</label>
             <input 
               type="number" 
               name="midterm" 
@@ -76,7 +76,7 @@ export default function StudentForm({ onAddStudent }) {
             />
           </div>
           <div className="form-group">
-            <label>Final (0-40)</label>
+            <label>สอบปลายภาค (0-40)</label>
             <input 
               type="number" 
               name="final" 
@@ -88,7 +88,7 @@ export default function StudentForm({ onAddStudent }) {
             />
           </div>
         </div>
-        <button type="submit" className="btn btn-primary">Add Student & Calculate</button>
+        <button type="submit" className="btn btn-primary">เพิ่มข้อมูลและคำนวณเกรด</button>
       </form>
     </div>
   );

@@ -2,24 +2,24 @@ export default function StudentTable({ students }) {
   if (students.length === 0) {
     return (
       <div className="card table-container empty-state">
-        <p>No student data yet. Add a student to see the table.</p>
+        <p>ยังไม่มีข้อมูลนักศึกษา เพิ่มข้อมูลเพื่อดูตาราง</p>
       </div>
     );
   }
 
   return (
     <div className="card table-container">
-      <h2>Student Records</h2>
+      <h2>ระเบียนประวัตินักศึกษา</h2>
       <div className="table-responsive">
         <table>
           <thead>
             <tr>
-              <th>ID / Name</th>
-              <th>Attendance</th>
-              <th>Midterm</th>
-              <th>Final</th>
-              <th>Total Score</th>
-              <th>Grade</th>
+              <th>รหัส / ชื่อ</th>
+              <th>การเข้าเรียน</th>
+              <th>สอบกลางภาค</th>
+              <th>สอบปลายภาค</th>
+              <th>คะแนนรวม</th>
+              <th>เกรด</th>
             </tr>
           </thead>
           <tbody>

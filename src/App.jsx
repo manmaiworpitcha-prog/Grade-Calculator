@@ -33,8 +33,8 @@ function App() {
     <div className="app-container">
       <header className="app-header">
         <div className="header-content">
-          <h1>Grade Calculator PRO</h1>
-          <p>Automated grading system & record management</p>
+          <h1>ระบบคำนวณเกรด PRO</h1>
+          <p>ระบบคำนวณเกรดและจัดการข้อมูลอัตโนมัติ</p>
         </div>
         <button className="btn btn-outline" onClick={handleExport} disabled={students.length === 0}>
           <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" style={{marginRight: '8px'}}>
@@ -42,7 +42,7 @@ function App() {
             <polyline points="7 10 12 15 17 10"></polyline>
             <line x1="12" y1="15" x2="12" y2="3"></line>
           </svg>
-          Export CSV
+          ส่งออก CSV
         </button>
       </header>
 
